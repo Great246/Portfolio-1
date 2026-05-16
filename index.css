@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    background: white;
+    scroll-behavior: smooth;
+    color: #0f0f0f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
+
+}
+.logo img {
+    width: 110px;
+    height: 130px;
+}
+.navs {
+    display: flex;
+    gap: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px 10%;
+    border-radius: 40px;
+}
+.navs a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+}
+.but button {
+  margin-right: 40px;
+  padding: 15px 22px;
+  border-radius: 4px;
+  color: white;
+  font-size: 23px;
+  background: #5D0D18;
+}
+.blob{
+    max-width: 400px;
+    height: 400px;
+    border-radius: 62% 38% 30% 70% / 60% 40% 60% 40%;
+    overflow: hidden;
+    margin: 150px auto;
+    background: #5D0D18;
+    animation: morp 8s ease-in-out;
+}
+@keyframes morp {
+    0% {
+        border-radius: 62% 38% 30% 70% / 60% 40% 60% 40%;
+    }
+    50% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    100% {
+        border-radius: 62% 38% 30% 70% / 60% 40% 60% 40%;
+    }
+}
+.firstsection {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    gap: 2vw;
+    justify-content: center;
+    padding: 20px;
+}
+.bty {
+    margin-top: 90px;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 40px;
+
+}
+.message-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.message-icons img{
+   height: 50px;
+   width: 50px;
+}
+.herotext {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    
+}
+.herotext h2 {
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+}
+.herotext p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.herotext a {
+    background-color: #5D0D18;
+    padding: 20px 30px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    text-decoration: none;
+}
+.secondsec {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+.writeupofnot {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+h2 {
+font-size: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    color: rgb(145, 145, 145);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboutmepiccand {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    animation: fadeUp 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.aboutmewrite {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: start;
+    width: 600px;
+    text-align: center;
+}
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555555;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboutmepicc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5D0D18;
+    width: 100%;
+    max-width: 500px;
+    height: 550px;
+    border-radius: 50px;
+    position: relative;
+}
+.aboutmepicc img {
+    width: 100%;
+    max-width: 450px;
+    height: 500px;
+  position: absolute;
+  right: 90px;
+  border-radius: 20px;
+}
+.whatioff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span {
+    color: #5D0D18;
+}
+.whatiofftop {
+    text-align: center;
+    align-items: center;
+}
+.whatiofftop h2 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.whatiofftop p {
+    color: rgb(145, 145, 145);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.whatioffdivs {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.whatioffi:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.whatioffi {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    transform-origin: center;
+    animation: fadeUp 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.whatioffi img {
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+}
+.whatioffi h3 {
+     margin-top: 25px;
+     font-size: 22px;
+}
+.whatioffi p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+.footerone {
+    margin-top: 50px;
+    background: #0f0f0f;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.footercontent {
+    max-width: auto;
+    margin: auto;
+}
+.footerone h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+.footerone p{
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.socials a img {
+    width: 35px;
+    margin: 0 10px;
+    transition: 0.3s;
+    filter: brightness(0) invert(1);
+}
+#name,
+#text,
+#card,
+#image {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: slideIn 1s ease forwards;
+}
+#image {
+    animation-delay: 0.5s;
+}
+#name {
+    animation-delay: 1.5s;
+}
+#text {
+    animation-delay: 2.5s;
+}
+#card {
+    animation-delay: 3.5s;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+.workexpre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.workexprepic {
+    display: grid;
+    margin-top: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+.workexprepic img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.workexprepic img:hover{
+    transform: scale(1.05);
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 45dvh;
+}
+.contactform {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #5D0D18;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+.contactform input {
+    padding: 1rem 7rem 1rem 1rem;
+    text-decoration: none;
+    border: none;
+    width: 80%;
+}
+.special {
+    padding: 1.1rem 2rem;
+    color: white;
+    font-size: 20px;
+    background-color: #5D0D18;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    border: 1px solid white;
+}
+.special:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: black;
+    
+}
+@keyframes slideIn {
+    from{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+@media (max-width: 880px) {
+    .firstsection {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+        height: auto;
+    }
+    .message-icons {
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .navs, .but {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .navs.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF9EB;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .herotext {
+        width: 100%;
+        margin-top: 0;
+    }
+    .herotext p {
+        padding: 0px 25px;
+    }
+    .herotext h2 {
+        padding: 0px 25px;
+        font-size: 25px;
+    }
+    .aboutmepiccand {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    .aboutmewrite {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .aboutmepicc {
+        width: 80%;
+        height: 280px;
+        border-radius: 50px;
+        left: 50px;
+    }
+    .aboutmepicc img {
+        width: 90%;
+        height: 280px;
+      right: 40px;
+      top: 20px;
+      border-radius: 15px;
+      
+    }
+    
+    
+    .whatiofftop {
+        text-align: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .whatiofftop h2 {
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .whatiofftop p {
+        color: rgb(145, 145, 145);
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .whatioff {
+        align-items: center;
+        height: auto;
+    }
+    .blob {
+        margin-top: 120px;
+        width: 30%;
+    }
+    .writeupofnot {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .writeupofnot h2 {
+    font-size: 27px;
+    margin-top: 35px;
+    }
+    .writeupofnot p {
+        color: rgb(145, 145, 145);
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .aboutmewrite h3 {
+        margin-top: 0;
+        font-size: 20px;
+        padding: 0px 25px;
+    }
+    .aboutmewrite p {
+        font-size: 16px;
+        padding: 0px 25px;
+    }
+    .footerone {
+        width: 100%;
+    }
+    .workexpre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .workexprepic {
+        margin-top: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+@media (max-width: 600px) {
+.whatioffi {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .whatioffi img {
+        margin-top: 0;
+        width: 50px;
+        height: 50px;
+    }
+    .whatioffi h3 {
+         margin-top: 10px;
+         font-size: 17px;
+    }
+    .whatioffi p {
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .aboutmepicc {
+        width: 80%;
+        height: 300px;
+        border-radius: 50px;
+        left: 50px;
+    }
+    .aboutmepicc img {
+        width: 86%;
+        height: 300px;
+      right: 60px;
+      top: 20px;
+      border-radius: 15px;
+      
+    }
+    .workexprepic {
+        display: grid;
+        margin-top: auto;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+@media (max-width: 1024px) {
+    .firstsection {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+        height: auto;
+    }
+    .message-icons {
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .navs, .but {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .navs.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF9EB;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .herotext {
+        width: 100%;
+        margin-top: 0;
+    }
+    .herotext p {
+        padding: 0px 25px;
+    }
+    .herotext h2 {
+        padding: 0px 25px;
+        font-size: 25px;
+    }
+    
+    .whatiofftop {
+        text-align: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .whatiofftop h2 {
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .whatiofftop p {
+        color: rgb(145, 145, 145);
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .whatioff {
+        align-items: center;
+        height: auto;
+    }
+    .whatioffdivs {
+        margin-top: 30px;
+        
+        gap: 20px;
+        
+    }
+    .blob {
+        margin-top: 120px;
+        width: 100%;
+    }
+    .writeupofnot {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .writeupofnot h2 {
+    font-size: 27px;
+    margin-top: 35px;
+    }
+    .writeupofnot p {
+        color: rgb(145, 145, 145);
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .aboutmewrite h3 {
+        margin-top: 0;
+        font-size: 20px;
+        padding: 0px 25px;
+    }
+    .aboutmewrite p {
+        font-size: 16px;
+        padding: 0px 25px;
+    }
+    .footerone {
+        width: 100%;
+    }
+    .aboutmepiccand {
+        gap: 15px;
+    }
+    .aboutmepicc {
+        width: 80%;
+        height: 280px;
+        border-radius: 50px;
+        left: 50px;
+    }
+    .aboutmepicc img {
+        width: 90%;
+        height: 280px;
+      right: 40px;
+      top: 20px;
+      border-radius: 15px;
+    }
+    .footerone {
+        width: 100%;
+    }
+}
